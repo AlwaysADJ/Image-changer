@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 10px;
+    background: #ccc;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:600px;
+    height: 400px;
+    background: none;    
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+    background: goldenrod;
+    box-shadow: 0 3px 20px #181818;
+    
+}
+
+header{
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+img{
+    width: 480px;
+    height: 320px;
+    margin-bottom: 2px;
+    box-shadow: 0 3px 20px #181818;
+    
+}
+
+#viewall /* all images */ {
+    width: 40%;
+    height: 40%;
+    margin-bottom: 2px;
+    box-shadow: 0 3px 20px #181818;
+}
+
+h3 {
+    padding-bottom: 40px;
+}
+
+.navigation button {
+    margin: 4px;
+    color: azure;
+    background: #181818;
+    padding: 4px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    border-radius: 3px;
+    box-shadow: 0 3px 20px #ccc;
+}
+
+.navigation:hover {
+    color: goldenrod;
+    box-shadow: 10px solid #ccc;
+}
+
+.navigation:after {
+    content: "";
+    background: #90EE90;
+    display: block;
+    position: absolute;
+    padding-top: 8%;
+    padding-left: 4%;
+    margin-left: -5px!important;
+    margin-top: -6%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+
+  .navigation:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+
+  button,
+  #refresh-btn {
+    flex: 1;
+    margin-top: 40px;
+    padding: 10px;
+    border-radius: 4px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0 3px 10px #181818;
+    border: none;
+    background: #fff;
+    text-decoration: none;
+    color: #181818;
+}
+
+#refresh-btn {
+    margin: 10px;
+}
+
+.refresh-btn {
+    text-decoration: none;
+    color: #181818;
+}
+
+button:hover, #refresh-btn:hover {
+    color: goldenrod;
+    border: 1px solid goldenrod
+}
